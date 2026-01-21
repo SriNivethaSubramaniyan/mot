@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Container */
+.container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  top: 25%;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #ff9800;
+  color: black;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ffc107;
+}
+
+/* Character */
+.character {
+  font-size: 50px;
+  margin-top: 30px;
+  opacity: 0;
+  animation: walk 2s infinite alternate;
+}
+
+@keyframes walk {
+  from { transform: translateX(-10px); }
+  to { transform: translateX(10px); }
+}
+
+/* Text */
+#text {
+  margin-top: 30px;
+  font-size: 22px;
+  font-family: 'Patrick Hand', cursive;
+  min-height: 100px;
+}
+
+/* Book Rain */
+.rain span {
+  position: absolute;
+  top: -10%;
+  color: rgba(255,255,255,0.6);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+  }
+}
