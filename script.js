@@ -16,7 +16,7 @@ const message = [
   "Nee podura efforts ku kandipa result kidaikum...",
   "Kashtam irukalam...",
   "Aana nee strong ah iru 💪",
-  "🔥 intha year pass pandrom 🔥"
+  "all the best"
   
 ];
 
@@ -46,4 +46,5 @@ function typeText() {
       setTimeout(typeText, 600);
     }
   }
+
 }
